@@ -15,16 +15,16 @@
 <body>
     <h1>First Fantassy Character Creator</h1>
     <p>Fill out the form to create a new character</p>
-    <form>
-        <div id="form">
+    <form id="form">
+        <div>
             <h2>Choose here</h2>
         </div>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
     </form>
 
     <fieldset id="dataField">
         <legend>Data</legend>
+        <button type="reset" form="form">Reset</button>
+        <button type="submit" form="form">Submit</button>
         <div id="data">
         </div>
     </fieldset>
