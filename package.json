@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node \"Error: no test specified\" && exit 1"
+        "start": "node L06_Server/Server.js"
     },
     "repository": {
         "type": "git",
@@ -20,3 +20,4 @@
         "@types/node": "^12.12.11"
     }
 }
+s
