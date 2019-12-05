@@ -30,5 +30,5 @@ export namespace L06_Editor {
         }
 
         _response.end();
-    }
+    };
 }
