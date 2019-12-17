@@ -6,16 +6,16 @@ var L09_Snowflake;
             if (_position)
                 this.position = _position;
             else
-                this.position = new Vector(0, 0);
+                this.position = new L09_Snowflake.Vector(0, 0);
             // neue Funktion, die einen random Wert für x festlegt
             let randomNumber = Math.random() * 4;
             // Die Geschwindigkeit soll den Vektor 0 und random haben   
-            this.velocity = new Vector(0, randomNumber);
+            this.velocity = new L09_Snowflake.Vector(0, randomNumber);
             this.size = (Math.random()) * (3 - 0.5) + 0.5;
         }
         move(_timeslice) {
             console.log("Snowflake move");
-            let offset = new Vector(this.velocity.x, this.velocity.y);
+            let offset = new L09_Snowflake.Vector(this.velocity.x, this.velocity.y);
             offset.scale(_timeslice);
             this.position.add(offset);
             if (this.position.y < 0)
@@ -27,10 +27,13 @@ var L09_Snowflake;
         }
         draw() {
             // console.log("Asteroid draw");
+            let nParticles = 400;
+            let particle = new Path2D();
+            particle.arc(0, 0, 2, 0, 2 * Math.PI);
             L09_Snowflake.crc2.save();
             L09_Snowflake.crc2.translate(this.position.x, this.position.y);
-            L09_Snowflake.crc2.scale(this.size, this.size);
-            L09_Snowflake.crc2.translate(-50, -50);
+            L09_Snowflake.crc2.fillStyle = "white";
+            L09_Snowflake.crc2.fill(particle);
             L09_Snowflake.crc2.restore();
         }
     }

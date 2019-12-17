@@ -1,5 +1,5 @@
-var L09_Snowflake;
-(function (L09_Snowflake) {
+var L09;
+(function (L09) {
     class Vector {
         constructor(_x, _y) {
             this.set(_x, _y);
@@ -23,6 +23,6 @@ var L09_Snowflake;
             this.scale(length);
         }
     }
-    L09_Snowflake.Vector = Vector;
-})(L09_Snowflake || (L09_Snowflake = {}));
-//# sourceMappingURL=Vector.js.map
+    L09.Vector = Vector;
+})(L09 || (L09 = {}));
+//# sourceMappingURL=vector.js.map
