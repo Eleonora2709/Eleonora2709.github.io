@@ -1,5 +1,5 @@
-var L09;
-(function (L09) {
+var L10;
+(function (L10) {
     class Vector {
         constructor(_x, _y) {
             this.set(_x, _y);
@@ -22,7 +22,11 @@ var L09;
             this.set(Math.cos(direction), Math.sin(direction));
             this.scale(length);
         }
+        copy() {
+            let vector = new Vector(this.x, this.y);
+            return vector;
+        }
     }
-    L09.Vector = Vector;
-})(L09 || (L09 = {}));
-//# sourceMappingURL=Vector.js.map
+    L10.Vector = Vector;
+})(L10 || (L10 = {}));
+//# sourceMappingURL=vector.js.map

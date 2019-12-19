@@ -20,6 +20,7 @@ var L09;
         drawTree({ x: 760, y: 300 }, { x: 0.5, y: 0.5 });
         drawTree({ x: 960, y: 270 }, { x: 0.3, y: 0.3 });
         drawBirdhouse({ x: 500, y: 400 });
+        drawSnowflake();
     }
     L09.Background = Background;
     function drawBackground() {
